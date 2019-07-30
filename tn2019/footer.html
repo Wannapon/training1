@@ -1,0 +1,89 @@
+<html>
+
+<head>
+  <script>
+    $(function () {
+      $("#footer").load("footer.html");
+    });
+  </script>
+</head>
+
+<body>
+
+  <!-- start footer -->
+  <footer id="footer">
+
+    <div class="row">
+      <div class="column">
+        <h1>About as</h1>
+        <p>Wannapon Roj</p>
+        <p>Ideacle Intern 2019</p>
+      </div>
+
+      <div class="column">
+        <h1>Contact me</h1>
+        <p>Phone : 099-999-9999</p>
+        <p>Maejo University</p>
+      </div>
+
+      <div class="column">
+        <h1>Social media</h1>
+        <a href="https://www.facebook.com/" target="blank"><img src="img/social/facebook.png"
+            alt="facebook"></a>
+        <a href="https://www.gmail.com/" target="blank"><img src="img/social/gmail.png"
+            alt="gmail"></a>
+        <a href="https://www.instragram.com/" target="blank"><img src="img/social/instagram.png"
+            alt="instragram"></a>
+        <a href="https://www.tweeter.com/" target="blank"><img src="img/social/twitter.png"
+            alt="tweeter"></a>
+        <a href="https://www.youtube.com/" target="blank"><img src="img/social/youtube.png"
+            alt="youtube"></a>
+      </div>
+
+      <!-- row -->
+    </div>
+
+  </footer>
+
+</body>
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+  #footer {
+    font-family: 'Righteous', cursive;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: auto;
+    width: auto;
+    border-top: 3px solid #0C2461;
+    background-color: #5758BB;
+    text-align: center;
+  }
+
+  #footer h1 ,p{
+    margin: 0px;
+    padding: 0px;
+    color: #32ff7e;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .column {
+    float: left;
+    width: 33%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  img {
+    float: center;
+    width: 50px;
+  }
+
+</style>
+
+</html>

@@ -24,45 +24,6 @@
     <?php
     require("connect_db.php");
 
-    //-- post data form to update to DB --
-    if ($_SERVER["REQUEST_METHOD"] === "POST") {
-        if (!empty($_POST['input_brand']) || !empty($_POST['input_model'])) {
-
-            $update_brand = $_POST['input_brand'];
-            $update_model = $_POST['input_model'];
-            $update_years = $_POST['input_year'];
-            $update_colour = $_POST['input_colour'];
-            $update_colour_code = $_POST['input_colourcode'];
-            $update_type = $_POST['input_type'];
-            $update_country = $_POST['input_country'];
-            $update_engine = $_POST['input_engine'];
-            $update_price = $_POST['input_price'];
-            $update_cars_id = $_POST['input_cars_id'];
-
-            $sql_string = "UPDATE in_cars 
-            SET brand = '{$update_brand}',
-            model = '{$update_model}',
-            years = '{$update_years}',
-            colour = '{$update_colour}',
-            colour_code = '{$update_colour_code}',
-            type = '{$update_type}',
-            country = '{$update_country}',
-            engine = '{$update_engine}',
-            price = '{$update_price}'
-            WHERE cars_id = " . $update_cars_id;
-            if ($conn->query($sql_string) === TRUE) {
-                echo '<b style="margin: 0px; color: green"> New record Update Successfully </b>';
-                echo '<br>';
-                echo "<a href='data.php'>กลับ</a>";
-            } else {
-                echo "Error: " . $sql . "<br>" . $conn->error;
-            }
-            // no input
-        } else {
-            echo '<b style="margin: 0px; color: red"> Input Empty </b>';
-        }
-    }
-
     //-- select data prepare to edit --
     if (!empty($_GET['cars_id'])) {
 
@@ -75,7 +36,7 @@
         $resultbrand = $conn->query($sql_brandname);
         ?>
         <div class="demo">
-            <form action="?" method="post">
+            <form action="car_edit_sql.php" method="post" enctype="multipart/form-data">
                 <b>ยี่ห้อ</b>
                 <br>
                 <select name="input_brand">
@@ -175,24 +136,21 @@
                 <input type="hidden" name="input_cars_id" value="<?= $row['cars_id'] ?>">
                 <br>
                 <br>
-                <button type="submit" class="btn-add" name="button">ส่งข้อมูล</button>
-            </form>
-
-            <form action="upload.php" method="post" enctype="multipart/form-data">
-                <br>
                 <b>Picture</b>
                 <br>
-                <?php if ($_SESSION['carimage'] == '') { ?>
+                <?php if ($row['car_img'] == '') { ?>
                     <img id="blah" src="CarsImage/no_image.png">
                 <?php } else { ?>
                     <img id="blah" src="CarsImage/<?= $row["car_img"]; ?>">
                 <?php } ?>
                 <br>
+                <input type="hidden" name="default" value="<?= $row["car_img"]; ?>">
                 <input type="file" id="imgInp" name="filUpload">
                 <br>
                 <input type="hidden" name="input_img_id" value="<?= $row['cars_id'] ?>">
                 <br>
                 <input type="submit" class="btn-add2" name="button" value="Submit">
+                
             </form>
 
         <?php

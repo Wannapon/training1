@@ -135,11 +135,7 @@
                 <form action="" method="post" enctype="multipart/form-data">
                     <b>Picture</b>
                     <br>
-                    <?php if ($_SESSION['carimage'] != '') { ?>
                         <img id="blah" src="CarsImage/no_image.png">
-                    <?php } else { ?>
-                        <img id="blah" src="CarsImage/<?= $row["car_img"]; ?>">
-                    <?php } ?>
                     <br>
                     <input type="file" id="imgInp" name="filUpload">
                     <br>

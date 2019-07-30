@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Kanit|Russo+One&display=swap');
+
+body {
+    margin: 0px;
+    background: #2C3A47;
+    font-family: 'Kanit', sans-serif;
+}
+
+form {
+    width: auto;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    float: center;
+    text-align: center;
+}
+
+b {
+    font-family: 'Russo One', sans-serif;
+    font-size: 40px;
+    color: white;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 170px;
+    color: white;
+    overflow: hidden;
+    outline: none;
+    padding: 5px 8px;
+    font-weight: 600;
+    background: none;
+    border: none;
+    border-bottom: 3px solid #2ecc71;
+    transition: 0.25s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    width: 250px;
+    padding: 10px;
+}
+
+input[type="submit"] {
+    width: 100px;
+    background: #3498db;
+    border: none;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 7px;
+    color: white;
+    transition: 0.25s;
+}
+
+input[type="submit"]:hover {
+    background: #0652DD;
+}
+
+input[type="reset"] {
+    width: 70px;
+    margin-top: 10px;
+    background: #e74c3c;
+    border: none;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 7px;
+    color: white;
+    transition: 0.25s;
+}
+
+input[type="reset"]:hover {
+    background: #c0392b;
+}
+
+::placeholder {
+    color: #95a5a6;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+a:hover {
+    color: #9c88ff;
+    font-size: 18px;
+}
+
+.alert {
+    /* width: 250px; */
+    margin-top: 10px;
+    padding: 2px 7px;
+    font-size: 30px;
+    text-align: center;
+    color: red;
+    text-shadow: 3px 2px 2px black, 0 0 25px white;
+
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+
+}
+
+.success {
+    margin-top: 10px;
+    padding: 2px 7px;
+    text-align: center;
+    color: green;
+    font-size: 30px;
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+}
+.showpass {
+    margin: 10px;
+    color: white;
+}
+
+@keyframes shake {
+
+    10%,
+    90% {
+        transform: translate3d(-5px, 0, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(5px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-20px, 0, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(20px, 0, 0);
+    }
+}

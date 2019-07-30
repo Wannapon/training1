@@ -1,0 +1,144 @@
+body {
+  margin: 0px;
+  padding: 0;
+  background: #2C3A47;
+  color: white;
+}
+
+.demo {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+  margin: 0;
+}
+
+.noline {
+  text-decoration: none;
+}
+
+#myTable {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  align-items: center;
+  width: auto;
+  border: 2px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th,
+#myTable td {
+  text-align: center;
+  padding: 5px;
+}
+
+#myTable tr {
+  border-bottom: 2px solid #ddd;
+}
+
+#myTable .header {
+  background-color: #131B1D;
+  color: white;
+
+}
+
+#myTable .table-hover:hover {
+  background-color: #f1f1f1;
+}
+
+.btn-back {
+  width: 100px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  background: black;
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+
+.btn-back:hover {
+  background: #4C4F54;
+}
+
+.btn-add {
+  width: 100px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  background: #1AA3E9;
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+
+.btn-add:hover {
+  background: #3D7EF1;
+}
+
+.btn-add2 {
+  width: 100px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  background: #9980FA;
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+
+.btn-add2:hover {
+  background: #5758BB;
+}
+
+.btn-edit {
+  width: 90%;
+  margin: 10px auto 10px;
+  display: block;
+  text-align: center;
+  background: #56CF47;
+  color: white;
+  border: none;
+  padding: 5px 5px;
+  border-radius: 5px;
+}
+
+.btn-edit:hover {
+  background: green;
+}
+
+.btn-delete {
+  width: 90%;
+  margin: 10px auto 10px;
+  display: block;
+  text-align: center;
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 5px;
+  border-radius: 5px;
+}
+
+.btn-delete:hover {
+  background: #D5111C;
+}
+
+form {
+  display: block;
+  width: auto;
+  height: auto;
+  text-align: center;
+}
+
+form b {
+  margin: 100px;
+}

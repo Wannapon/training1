@@ -45,11 +45,14 @@ h3 {
 #myTable .header {
   background-color: #131B1D;
   color: white;
-
+  height: 80px;
+  font-size: 25px;
 }
 
 #myTable .table-hover:hover {
-  background-color: #f1f1f1;
+  transition: 0.5s;
+  background-color: #1dd1a1;
+  color: black;
 }
 
 .btn-back {

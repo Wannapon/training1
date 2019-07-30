@@ -314,6 +314,9 @@ define("TITLE", "I am Title");
         background-color: lightgray;
         color: black;
     }
+	.pump-class {
+		background-color: blue;
+	}
 </style>
 
 </html>

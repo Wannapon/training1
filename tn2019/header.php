@@ -2,8 +2,7 @@
 <html lang="en">
 
 <head>
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
-    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script>
         $(function() {
             $("#header").load("header.html");
@@ -12,6 +11,7 @@
 </head>
 
 <body>
+
     <header id="header">
         <nav class="topnav">
             <a href="data.php">Cars data [HOME]</a>
@@ -19,9 +19,13 @@
             <a href="type_data.php">Type data</a>
             <a href="country_data.php">Country data</a>
             <a href="profile.php">Profile</a>
+            <a href="bootstrap.php">Bootstrap</a>
+            <a href="news-bootstrap.html">News</a>
+
             <button class="logout" onclick="window.location.href='logout.php'"> LOGOUT <img class="lg-out" src="img/social/logout.png"></button>
         </nav>
     </header>
+
 </body>
 <style>
     @import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
@@ -30,11 +34,13 @@
         font-family: 'Righteous', cursive;
     }
 
+
     .topnav {
         width: 100%;
-        position: fixed;
+        position: relative;
         overflow: hidden;
         background-color: #333;
+
     }
 
     .topnav a {

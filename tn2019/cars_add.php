@@ -167,4 +167,11 @@
     });
 </script>
 
+<style>
+#blah{
+    max-width: 250px;
+    max-height: 250px;
+}
+</style>
+
 </html>

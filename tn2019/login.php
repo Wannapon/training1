@@ -19,34 +19,36 @@ if ($_SESSION['UserID'] != '') {
 ?>
 
 <body>
+    <section>
 
-    <form method="post" action="check_login.php">
-        <b>Sign in</b>
-        <br>
-        <br>
-        <img src="" alt="">
-        <input name="Username" type="text" placeholder="Username" required>
-        <br>
-        <br>
-        <input id="myInput" name="Password" type="password" minlength="8" placeholder="Password" required>
-        <div class="showpass">
-            <input type="checkbox" onclick="myFunction()">Show Password
-        </div>
-        <input type="submit" name="Submit" value="LOGIN">
-        <br>
-        <a href="register.php">Register</a>
-        <?php
-        if ($_SESSION["alert"] == 'fail') {
-            echo '<div class="alert"> Login Fail Please try again. </div>';
-        } elseif ($_SESSION["alert"] == 'fail8') {
-            echo '<div class="alert"> Pass Wrong 8 </div>';
-        } elseif ($_SESSION["register"] == 'complete') {
-            echo '<div class="alert"> Register Complete </div>';
-        }
-        unset($_SESSION["alert"]);
-        ?>
-    </form>
+        <form method="post" action="check_login.php">
+            <b>Sign in</b>
+            <br>
+            <br>
+            <img src="" alt="">
+            <input name="Username" type="text" placeholder="Username" required>
+            <br>
+            <br>
+            <input id="myInput" name="Password" type="password" minlength="8" placeholder="Password" required>
+            <div class="showpass">
+                <input type="checkbox" onclick="myFunction()">Show Password
+            </div>
+            <input type="submit" name="Submit" value="LOGIN">
+            <br>
+            <a href="register.php">Register</a>
+            <?php
+            if ($_SESSION["alert"] == 'fail') {
+                echo '<div class="alert"> Login Fail Please try again. </div>';
+            } elseif ($_SESSION["alert"] == 'fail8') {
+                echo '<div class="alert"> Pass Wrong 8 </div>';
+            } elseif ($_SESSION["register"] == 'complete') {
+                echo '<div class="alert"> Register Complete </div>';
+            }
+            unset($_SESSION["alert"]);
+            ?>
+        </form>
 
+    </section>
 </body>
 <style>
 

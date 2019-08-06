@@ -1,13 +1,8 @@
 body {
-  margin: 0px;
+  margin: 0;
   padding: 0;
   background: #2C3A47;
   color: white;
-}
-
-.demo {
-  margin-top: 50px;
-  margin-bottom: 50px;
 }
 
 h1 {
@@ -20,6 +15,11 @@ h3 {
 
 .noline {
   text-decoration: none;
+}
+
+.car-img {
+  max-width: 100px;
+  max-height: 100px;
 }
 
 #myTable {

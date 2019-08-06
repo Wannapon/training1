@@ -150,7 +150,7 @@
                 <input type="hidden" name="input_img_id" value="<?= $row['cars_id'] ?>">
                 <br>
                 <input type="submit" class="btn-add2" name="button" value="Submit">
-                
+
             </form>
 
         <?php

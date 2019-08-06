@@ -125,7 +125,7 @@
                         <td> <?= $row['model'] ?> </td>
                         <td> <?= $row['years'] ?> </td>
                         <td style="color:<?= $row['colour_code'] ?>; "> <b> <?= $row['colour'] ?></b> </td>
-                        <td> <?= $row['colour_code'] ?> </td>
+                        <td style="color:<?= $row['colour_code'] ?>; "> <?= $row['colour_code'] ?> </td>
                         <td> <?= $row['ct_name'] ?> </td>
                         <td> <?= $row['cc_name'] ?> </td>
                         <td> <?= $row['engine'] ?></td>
@@ -133,9 +133,9 @@
                         <td> <?= $row['createdate'] ?> </td>
                         <td> <?= $row['updatedate'] ?> </td>
                         <td> <?php if ($row['car_img'] != '') {
-                                    echo '<img src="CarsImage/'.$row['car_img'].'">';
+                                    echo '<img class="car-img" src="CarsImage/'.$row['car_img'].'">';
                                 } else {
-                                    echo '<img src="CarsImage/no_image.png">';
+                                    echo '<img class="car-img" src="CarsImage/no_image.png">';
                                 }
                                 ?>
                         </td>
